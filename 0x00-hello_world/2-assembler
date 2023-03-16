@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Extract the file name without the extension
+filename=$(basename "$CFILE" .c)
+
+# Generate the assembly code
+gcc -S "$CFILE"
+
+# Rename the output file
+mv "$filename.s" "$filename"
