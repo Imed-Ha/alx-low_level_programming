@@ -1,25 +1,22 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+int main()
 {
-    char ch = 'a';
-    char ch1 = 'A';
+    char ch;
 
-    while (ch <= 'z')
+    printf("Alphabets in lowercase:\n");
+    for(ch = 'a'; ch <= 'z'; ++ch)
     {
         putchar(ch);
-        ch++;
+        printf(" ");
     }
-    while (ch1 <= 'Z')
+
+    printf("\nAlphabets in uppercase:\n");
+    for(ch = 'A'; ch <= 'Z'; ++ch)
     {
-        putchar(ch1);
-        ch1++;
+        putchar(ch);
+        printf(" ");
     }
-    putchar('\n');
-    return (0);
+
+    return 0;
 }
