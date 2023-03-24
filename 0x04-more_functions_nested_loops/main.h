@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+void fizzBuzz(void);
 void print_square(int size);
 void print_diagonal(int n);
 void print_line(int n);
