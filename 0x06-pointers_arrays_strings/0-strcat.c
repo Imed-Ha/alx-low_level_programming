@@ -9,22 +9,22 @@
  */
 char *_strcat(char *dest, char *src)
 {
-        char *ptr = dest;
+	char *ptr = dest;
 
-        /* Move pointer to the end of dest string */
-        while (*ptr != '\0')
-                ptr++;
+	/* Move pointer to the end of dest string */
+	while (*ptr != '\0')
+		ptr++;
 
-        /* Append src string to dest string */
-        while (*src != '\0')
-        {
-                *ptr = *src;
-                ptr++;
-                src++;
-        }
+	/* Append src string to dest string */
+	while (*src != '\0')
+	{
+		*ptr = *src;
+		ptr++;
+		src++;
+	}
 
-        /* Add null byte at the end of dest string */
-        *ptr = '\0';
+	/* Add null byte at the end of dest string */
+	*ptr = '\0';
 
-        return (dest);
+	return (dest);
 }
