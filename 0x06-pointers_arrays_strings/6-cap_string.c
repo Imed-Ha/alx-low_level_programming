@@ -32,7 +32,7 @@ char *cap_string(char *str)
 
 	while (*p)
 	{
-        	/* capitalize first letter of each word */
+		/* capitalize first letter of each word */
 		if ((*p >= 'a' && *p <= 'z') && (p == str || is_separator(*(p - 1))))
 		{
 			*p -= 'a' - 'A';
