@@ -9,13 +9,13 @@
  */
 int is_digit(char *s)
 {
-    while (*s)
-    {
-        if (*s < '0' || *s > '9')
-            return (0);
-        s++;
-    }
-    return (1);
+	while (*s)
+	{
+		if (*s < '0' || *s > '9')
+			return (0);
+		s++;
+	}
+	return (1);
 }
 
 /**
@@ -27,19 +27,19 @@ int is_digit(char *s)
  */
 int main(int argc, char **argv)
 {
-    int i, sum = 0;
+	int i, sum = 0;
 
-    for (i = 1; i < argc; i++)
-    {
-        if (!is_digit(argv[i]))
-        {
-            printf("Error\n");
-            return (1);
-        }
-        sum += atoi(argv[i]);
-    }
+	for (i = 1; i < argc; i++)
+	{
+		if (!is_digit(argv[i]))
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum += atoi(argv[i]);
+	}
 
-    printf("%d\n", sum);
+	printf("%d\n", sum);
 
-    return (0);
+	return (0);
 }
