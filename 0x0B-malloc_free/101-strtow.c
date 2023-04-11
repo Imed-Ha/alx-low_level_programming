@@ -32,7 +32,7 @@ static int count_words(char *str)
  * @str: The string to split.
  *
  * Return: A pointer to an array of strings (words).
- *         Each element of this array should contain a single word, null-terminated.
+ *         Each element of thistain a single word, null-terminated.
  *         The last element of the returned array should be NULL.
  *         Returns NULL if str == NULL or str == "".
  *         If your function fails, it should return NULL.
