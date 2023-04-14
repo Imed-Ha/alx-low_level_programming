@@ -10,14 +10,14 @@
  */
 int _isdigit(char c)
 {
-	return isdigit(c);
+	return (isdigit(c));
 }
 
 /**
  * _atoi - converts a string to an integer
  * @s: string to convert
  *
- * Returof string, or -1 if s contains non-digit characters
+ * Return: integer value of string, or -1 if s contains non-digit characters
  */
 int _atoi(char *s)
 {
@@ -26,12 +26,12 @@ int _atoi(char *s)
 	while (*s)
 	{
 		if (!_isdigit(*s))
-			return -1;
+			return (-1);
 		result = result * 10 + (*s - '0');
 		s++;
 	}
 
-	return result;
+	return (result);
 }
 
 /**
@@ -39,7 +39,7 @@ int _atoi(char *s)
  * @argc: number of arguments
  * @argv: array of argument strings
  *
- * Return: 0 if successful, 98 if incorrect number of arguments or non-digit characters
+ * Return: 0 if surguments or non-digit characters
  */
 int main(int argc, char **argv)
 {
@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return 98;
+		return (98);
 	}
 
 	num1 = _atoi(argv[1]);
@@ -57,13 +57,13 @@ int main(int argc, char **argv)
 	if (num1 == -1 || num2 == -1)
 	{
 		printf("Error\n");
-		return 98;
+		return (98);
 	}
 
 	result = num1 * num2;
 
 	printf("%d\n", result);
 
-	return 0;
+	return (0);
 }
 
