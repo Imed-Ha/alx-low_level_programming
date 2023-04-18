@@ -2,10 +2,12 @@
 #define DOG_H
 
 /**
- * struct dog - a struct representing a dog
- * @name: the name of the dog
- * @age: the age of the dog
- * @owner: the owner of the dog
+ * struct dog - structure for a dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ *
+ * Description: structure defining attributes of a dog
  */
 typedef struct dog
 {
@@ -14,8 +16,7 @@ typedef struct dog
     char *owner;
 } dog_t;
 
-/* function prototypes */
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
+void init_dog(dog_t *d, char *name, float age, char *owner);
+void print_dog(dog_t *d);
 
 #endif /* DOG_H */
