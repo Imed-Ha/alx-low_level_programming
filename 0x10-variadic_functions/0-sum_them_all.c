@@ -1,8 +1,8 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - Returns the sum of all its parameters.
- * @n: The number of parameters passed to the function.
+ * sum_t - Returns the sum of all its parameters.
+ * @n: Ter of parameters passed to the function.
  *
  * Return: The sum of all parameters.
  */
